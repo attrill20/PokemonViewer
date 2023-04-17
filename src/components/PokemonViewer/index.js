@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import "./poke.css";
 
 function PokemonViewer({ id }) {
 
@@ -21,6 +22,7 @@ function PokemonViewer({ id }) {
           <h2> Name: {pokemon.name} </h2>
           <p> ID: {pokemon.id} </p>
           <p> Weight: {pokemon.weight} </p>
+          <img src={pokemon.sprites.front_default} alt={pokemon.name} />
           </>
       )}
     </div>

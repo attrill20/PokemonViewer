@@ -15,11 +15,14 @@ function App() {
     <div className="App">
      
       {/* TODO: Task 2 -  call handleClick when button clicked */}
-      <button onClick = {handleClick}>Get Random Pokemon</button>
+    <div className="button-container">
+      <button className="button" onClick = {handleClick}>Get Random Pokemon</button>
+    </div>
 
       {/* TODO: Task 2 -  hand down id as a prop */}
+    <div className="pokemon-container">
       <PokemonViewer id={id}/>
-
+    </div>
     </div>
   );
 }
